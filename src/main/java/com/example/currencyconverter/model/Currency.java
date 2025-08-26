@@ -1,13 +1,12 @@
 package com.example.currencyconverter.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 import java.math.BigDecimal;
 
-@Entity
-@Table(name = "currencies")
+@Document(collection = "currencies")
 public class Currency {
+
     @Id
     private String code;
     private String name;
