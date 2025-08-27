@@ -14,7 +14,7 @@
 	<name>currency-converter</name>
 	<description>Spring Boot Currency Converter API</description>
 	<properties>
-		<java.version>21</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 <!--		<dependency>-->
