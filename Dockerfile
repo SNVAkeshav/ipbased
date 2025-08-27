@@ -10,9 +10,6 @@ FROM eclipse-temurin:17-jre-alpine
 
 COPY target/currency-converter-0.0.1-SNAPSHOT.jar app.jar
 
-# Create a non-root user for security
-RUN addgroup -S appgroup && adduser -S appuser -G appgroup
-USER appuser
 
 # Expose port 8080
 EXPOSE 8080
