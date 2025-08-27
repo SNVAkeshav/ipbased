@@ -1,4 +1,4 @@
-```dockerfile
+
 # Stage 1: Build the application
 FROM maven:3.8.6-eclipse-temurin-17-alpine AS builder
 COPY pom.xml .
