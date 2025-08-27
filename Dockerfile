@@ -1,8 +1,7 @@
 
 # Stage 1: Build the application
 FROM maven:3.8.6-eclipse-temurin-17-alpine AS builder
-COPY pom.xml .
-COPY src ./src
+COPY . .
 RUN mvn clean package
 
 # Stage 2: Create the runtime image
